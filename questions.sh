@@ -10,3 +10,7 @@ echo What is your favorite song?
 read SONG
 echo What is your favorite book?
 read BOOK
+
+DATE=$(date +"%F_%T")
+
+echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,"uniqueID",$DATE
