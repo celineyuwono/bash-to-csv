@@ -13,5 +13,4 @@ read -e BOOK
 
 DATE=$(date +"%F_%T")
 
-echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,"uniqueID",$DATE
-echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,"uniqueID",$DATE >> answers.csv
+echo -e "\e[30m$uuid,$DATE,$NAME,$AGE,$MOVIE,$SONG,$BOOK" >> answers.csv
