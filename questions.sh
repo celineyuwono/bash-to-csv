@@ -15,5 +15,4 @@ DATE=$(date +"%F_%T")
 uuid=$(cat /proc/sys/kernel/random/uuid)
 
 echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,$uuid,$DATE
-echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,$uuid,$DATE >> answers.csv
-
+echo -e "\e[30m$uuid,$DATE,$NAME,$AGE,$MOVIE,$SONG,$BOOK" >> answers.csv
