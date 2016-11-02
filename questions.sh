@@ -13,4 +13,5 @@ read BOOK
 
 DATE=$(date +"%F_%T")
 
+echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,"uniqueID",$DATE
 echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,"uniqueID",$DATE >> answers.csv
