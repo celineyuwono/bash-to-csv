@@ -1,15 +1,15 @@
 #!/bin/bash
 
-echo What is your name?
+echo -e "\e[31mWhat is your name?"
 read NAME
-echo What is your age?
+echo -e "\e[32mWhat is your age?"
 read AGE
-echo What is your favorite movie?
+echo -e "\e[34mWhat is your favorite movie?"
 read MOVIE
-echo What is your favorite song?
+echo -e "\e[95mWhat is your favorite song?"
 read SONG
-echo What is your favorite book?
-read BOOK
+echo -e "\e[93mWhat is your favorite book?"
+read -e BOOK
 
 DATE=$(date +"%F_%T")
 
