@@ -12,6 +12,8 @@ echo -e "\e[93mWhat is your favorite book?"
 read -e BOOK
 
 DATE=$(date +"%F_%T")
+uuid=$(cat /proc/sys/kernel/random/uuid)
 
-echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,"uniqueID",$DATE
-echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,"uniqueID",$DATE >> answers.csv
+echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,$uuid,$DATE
+echo $NAME,$AGE,$MOVIE,$SONG,$BOOK,$uuid,$DATE >> answers.csv
+
